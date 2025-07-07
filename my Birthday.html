@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Aniket!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: #ff4081;
+      margin-top: 50px;
+      animation: bounce 2s infinite;
+    }
+
+    p {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .balloon {
+      width: 50px;
+      height: 70px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: absolute;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: black;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .cake {
+      margin: 50px auto;
+      width: 200px;
+      height: 150px;
+      background: #ffb347;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .cake::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 85px;
+      width: 30px;
+      height: 30px;
+      background: #ff6347;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎂 Happy Birthday Aniket! 🎉</h1>
+  <p>Wishing you a day full of love, laughter, and cake! 🍰</p>
+
+  <div class="cake"></div>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left:10%; background-color:#ff4d4d;"><h3>A</h3></div>
+  <div class="balloon" style="left:30%; background-color:#4dd2ff;"><h3>n</h3></div>
+  <div class="balloon" style="left:50%; background-color:#ffff66;"><h3>i</h3></div>
+  <div class="balloon" style="left:70%; background-color:#66ff66;"><h3>k</h3></div>
+  <div class="balloon" style="left:90%; background-color:#d966ff;"><h3>e</h3></div>
+  <div class="balloon" style="left:90%; background-color:#ea0ddf;"><h3>t</h3></div>
+ 
+</body>
+</html>
